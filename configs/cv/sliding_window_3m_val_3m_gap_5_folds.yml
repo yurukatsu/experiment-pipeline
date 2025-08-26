@@ -1,0 +1,8 @@
+strategy: "sliding_window"     # 'sliding window' or 'expanding window'
+date_column_name: "dtBaseDate"         # List of date columns to use for splitting
+n_splits: 5                    # 5 folds
+validation_duration: "3mo"      # (e.g., "3mo", "1w", "10d")
+gap_duration: "3mo"             # (e.g., "3mo", "1w", "10d")
+step_duration: "3mo"            # (e.g., "3mo", "1w", "10d")
+train_duration:                   # (e.g., "3mo", "1w", "10d", None). If strategy is "expanding_window", this field is  ignored.
+test_end_date: "2025-03-31"  # 検証期間の最後の日から逆算する

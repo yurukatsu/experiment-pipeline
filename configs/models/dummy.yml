@@ -1,0 +1,4 @@
+name: "DummyRegressor"
+model_class: "src.models.dummy.DummyRegressor"
+fit_params: {}
+prediction_params: {}

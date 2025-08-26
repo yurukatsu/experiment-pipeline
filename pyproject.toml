@@ -1,0 +1,24 @@
+[project]
+name = "experiment-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "autogluon-tabular>=1.4.0",
+    "catboost>=1.2.8",
+    "gokart==1.10.2",
+    "lightgbm>=4.6.0",
+    "mlflow==3.3.1",
+    "polars>=1.32.3",
+    "pydantic-settings>=2.10.1",
+    "scikit-learn>=1.7.1",
+    "xgboost>=3.0.4",
+]
+
+[dependency-groups]
+dev = [
+    "marimo[recommended]>=0.15.0",
+    "ruff>=0.12.10",
+    "vegafusion>=2.0.2",
+]
