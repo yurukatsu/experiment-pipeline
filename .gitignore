@@ -16,6 +16,9 @@ mlartifacts/
 # Data files
 # data/
 
+# Models
+AutogluonModels
+
 # Logs
 *.log
 logs/
