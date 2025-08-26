@@ -13,6 +13,9 @@ dependencies = [
     "polars>=1.32.3",
     "pydantic-settings>=2.10.1",
     "scikit-learn>=1.7.1",
+    "setuptools>=80.9.0",
+    "tornado>=6.5.2",
+    "vl-convert-python>=1.8.0",
     "xgboost>=3.0.4",
 ]
 

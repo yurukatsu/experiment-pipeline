@@ -1,0 +1,11 @@
+name: "AutoGluon"
+model_class: "src.models.ag.AutoGluonModel"
+fit_params:
+  label: "Flow"  # AutoGluonのTabularPredictorはlabelを必要とします
+  verbosity: 2  # ログレベル（0-4）
+  # 学習時間とモデル品質の制御はag_argsで行う
+  ag_args_fit:
+    time_limit: 300  # 5分の制限時間
+  # 使用するモデルタイプを制限（高速化のため）
+  included_model_types: ["GBM", "RF", "XT"]  # GradientBoosting, RandomForest, ExtraTrees
+prediction_params: {}

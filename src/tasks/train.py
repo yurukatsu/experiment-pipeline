@@ -145,15 +145,17 @@ class TrainTask(MlflowTask):
                 else model_class,
             }
         )
-        
+
         # Log settings information
-        mlflow.log_params({
-            "settings": {
-                "data_config": self.settings.data_cfg.model_dump(),
-                "model_config": self.settings.model_cfg.model_dump(),
-                "cv_config": self.settings.cv_cfg.model_dump(),
+        mlflow.log_params(
+            {
+                "settings": {
+                    "data_config": self.settings.data_cfg.model_dump(),
+                    "model_config": self.settings.model_cfg.model_dump(),
+                    "cv_config": self.settings.cv_cfg.model_dump(),
+                }
             }
-        })
+        )
 
         # Log feature importance if available (for tree-based models)
         if (
